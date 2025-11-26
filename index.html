@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura O‘zgartirgich</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Temperatura O‘zgartirgich</h2>
+
+        <div class="converter-box">
+            <input type="number" id="inputValue" placeholder="Qiymat kiriting">
+
+            <select id="inputType">
+                <option value="celsius">Selsiy (°C)</option>
+                <option value="fahrenheit">Farangeyt (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+
+            <button onclick="convert()">Hisoblash</button>
+        </div>
+
+        <div class="result-box">
+            <p id="celsiusResult"></p>
+            <p id="fahrenheitResult"></p>
+            <p id="kelvinResult"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
